@@ -1,0 +1,81 @@
+@import './varibles';
+
+
+.wrapper_light{
+    height: 100%;
+    background-color:$ligth;
+    color: $dark;
+}
+
+.wrapper_dark{
+    background-color: $dark;
+    color: $ligth;
+}
+
+.wrapper_stress{
+    background-color: $stress;
+    color: $ligth;
+}
+
+.wrapper_calm{
+    background-color: $calm;
+    color: $dark;
+}
+
+.main_wrapper{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-row: 3*$baseline 2*$baseline auto 2*$baseline;
+    grid-template-areas: 
+    "he he he he he he"
+    "na na na na na na"
+    "ga ar ar ar ar as"
+    "fo fo fo fo fo fo"
+    ;
+    padding: 5rem;
+    gap: 2rem;
+
+    a{
+        text-decoration: none;
+    }
+
+
+    .header{
+        grid-area: he;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav{
+        grid-area: na;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+
+    }
+    
+    .aside{
+        grid-area: as;
+    }
+
+    article{
+        grid-area: ar;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .gap{
+        grid-area: ga;
+    }
+
+    
+    footer{
+        grid-area: fo;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+}

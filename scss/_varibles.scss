@@ -1,0 +1,28 @@
+/*COLORS*/
+$ligth: rgb(254, 255, 238);
+$dark: #2b2b2b;
+$stress: #A60010;
+$calm:#9AFFDF;
+
+
+$baseline: 3rem;
+
+
+@mixin center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+button{
+    appearance: none;
+    margin: 1rem;
+    color: $ligth;
+    padding: .5rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: .5rem;
+    box-shadow: 0px 5px 6px rgba(0,0,0,.5);
+}
